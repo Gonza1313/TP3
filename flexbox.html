@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 - Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav><a href="index.html">← Volver al Inicio</a></nav>
+    <h1>Maquetación con Flexbox y JS</h1>
+    
+    <button id="btn-filter">Mostrar solo destacados</button>
+    
+    <div class="flex-container" id="container"></div>
+
+    <script>
+        const productos = [
+            { id: 1, nombre: "Laptop", precio: 800, destacado: true },
+            { id: 2, nombre: "Mouse", precio: 25, destacado: false },
+            { id: 3, nombre: "Teclado", precio: 45, destacado: true },
+            { id: 4, nombre: "Monitor", precio: 200, destacado: false },
+            { id: 5, nombre: "Auriculares", precio: 60, destacado: false },
+            { id: 6, nombre: "Cámara Web", precio: 90, destacado: true }
+        ];
+
+        const container = document.getElementById('container');
+        const btnFilter = document.getElementById('btn-filter');
+        let filtrado = false;
+
+        function renderizar(lista) {
+            container.innerHTML = "";
+            lista.forEach(p => {
+                const card = document.createElement('div');
+                card.className = `card ${p.destacado ? 'highlight' : ''}`;
+                card.innerHTML = `
+                    <h3>${p.nombre}</h3>
+                    <p>Precio: $${p.precio}</p>
+                    <p><strong>${p.destacado ? '⭐ Destacado' : 'Estándar'}</strong></p>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        btnFilter.addEventListener('click', () => {
+            filtrado = !filtrado;
+            if (filtrado) {
+                const destacados = productos.filter(p => p.destacado);
+                renderizar(destacados);
+                btnFilter.textContent = "Mostrar todos";
+            } else {
+                renderizar(productos);
+                btnFilter.textContent = "Mostrar solo destacados";
+            }
+        });
+
+        renderizar(productos);
+    </script>
+</body>
+</html>
