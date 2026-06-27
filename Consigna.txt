@@ -1,0 +1,115 @@
+Flexbox, formularios dinámicos y React
+Consigna general
+Crear un nuevo repositorio en GitHub para esta actividad y configurarlo para que funcione como sitio publicado mediante GitHub Pages.
+
+Inicializar el proyecto con Git y registrar el proceso de desarrollo mediante commits significativos.
+
+Desarrollar 4 páginas web relacionadas entre sí mediante enlaces de navegación:
+
+index.html
+
+flexbox.html
+
+personas.html
+
+react.html
+
+La página principal index.html debe incluir enlaces hacia las páginas de los ejercicios.
+
+Las demás páginas deben incluir un enlace de regreso a index.html.
+
+En el conjunto del sitio se debe evidenciar el uso de:
+
+Flexbox para organizar contenidos;
+
+JavaScript básico con variables, condicionales, funciones y arreglos;
+
+manipulación del DOM;
+
+manejo de eventos;
+
+carga dinámica de datos en tablas;
+
+React para resolver una interfaz equivalente a la del ejercicio 2.
+
+Los ejercicios deben ser simples, claros y funcionales, sin complejidad innecesaria.
+
+Ejercicios a resolver
+Ejercicio 1 - Página flexbox.html: maquetación con Flexbox y JavaScript común
+
+Crear una interfaz con bloques o tarjetas organizados mediante Flexbox.
+
+Mostrar al menos 6 elementos generados desde un arreglo con JavaScript.
+
+Incluir al menos un botón o interacción simple que modifique la vista, por ejemplo: ordenar, resaltar, filtrar o cambiar el contenido mostrado.
+
+El trabajo debe dejar en evidencia el uso de display: flex, alineación, distribución o envoltura de elementos.
+
+Ejercicio 2 - Página personas.html: formulario y tabla de personas con HTML y JavaScript común
+
+Crear un formulario para cargar personas con los campos:
+
+nombre;
+
+apellido;
+
+edad;
+
+altura;
+
+peso.
+
+Mostrar los datos en una tabla.
+
+Permitir el agregado de filas a partir del formulario.
+
+Permitir el quitado de filas desde la tabla, por ejemplo con un botón por fila.
+
+Incorporar una columna adicional que muestre el IMC (índice de masa corporal) de cada persona, calculado a partir de peso y altura.
+
+La resolución debe hacerse con HTML, CSS y JavaScript común, manipulando el DOM y eventos de forma directa.
+
+Ejercicio 3 - Página react.html: formulario y tabla de personas con React
+
+Resolver la misma funcionalidad del ejercicio 2 utilizando React.
+
+Crear un formulario para cargar personas con los mismos campos:
+
+nombre;
+
+apellido;
+
+edad;
+
+altura;
+
+peso.
+
+Mostrar los registros en una tabla.
+
+Permitir el agregado y el quitado de filas.
+
+Incorporar una columna con el IMC (índice de masa corporal) calculado desde peso y altura.
+
+Resolver la interfaz con componentes, estado y eventos de React, sin depender de librerías externas de UI.
+
+Requisitos mínimos
+El repositorio debe estar accesible en GitHub y publicado como GitHub Pages.
+
+Deben existir las 4 páginas solicitadas y funcionar correctamente.
+
+La navegación entre páginas debe estar resuelta mediante enlaces internos.
+
+El ejercicio 1 debe evidenciar el uso de Flexbox en la distribución visual.
+
+El ejercicio 2 debe permitir cargar personas, mostrarlas en tabla, agregar filas, quitar filas e incluir el IMC.
+
+El ejercicio 3 debe replicar la funcionalidad del ejercicio 2 con React, incluyendo agregado, quitado e IMC.
+
+La solución debe usar JavaScript común en los ejercicios 1 y 2.
+
+La solución con React debe usar componentes y estado de forma clara.
+
+No se permite el uso de librerías externas de CSS ni de componentes de UI ajenos a React.
+
+El historial del repositorio debe mostrar al menos 10 commits relevantes y progresivos.
